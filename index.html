@@ -28,7 +28,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-orange"></i>Solution Architect</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-orange"></i>Principal Solution Architect</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-orange"></i>Philadelphia, PA</p>
           <p><i class="fa fa-paper-plane fa-fw w3-margin-right w3-large w3-text-orange"></i><a href="mailto:elizabeth.a.sheffield@gmail.com">elizabeth.a.sheffield@gmail.com</a></p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-orange"></i><a href="mailto:es3279@drexel.edu">es3279@drexel.edu</a></p>
@@ -42,13 +42,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
           <p>Sentiment Analysis</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-round-xlarge w3-orange" style="height:24px;width:80%"></div>
+            <div class="w3-round-xlarge w3-orange" style="height:24px;width:20%"></div>
           </div>
           <p>Language Generation</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-round-xlarge w3-orange" style="height:24px;width:75%"></div>
+            <div class="w3-round-xlarge w3-orange" style="height:24px;width:80%"></div>
           </div>
-          <p>Data Propogation</p>
+          <p>Synthetic Text Generation</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-round-xlarge w3-orange" style="height:24px;width:75%"></div>
           </div>
@@ -65,7 +65,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
           <p>Python</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-orange" style="height:24px;width:75%"></div>
+            <div class="w3-round-xlarge w3-orange" style="height:24px;width:90%"></div>
           </div>
           <br>
         </div>
@@ -75,7 +75,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Ph.D. Information Science / Drexel University</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Current PhD student advised by Dr. Jake Ryland Williams</p>
+          <p>Current PhD Candidate advised by Dr. Jake Ryland Williams</p>
           <hr>
         </div>
         <div class="w3-container">
@@ -108,6 +108,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <hr>
         </div>
       </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-text-o fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Papers</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><a href="https://ieeexplore.ieee.org/document/11391227">Temporal Segmentation of Social Media Timelines: A Comparative Evaluation of Clustering Algorithms</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2025 12th International Conference on Social Networks Analysis, Management and Security (SNAMS)</h6>
+          <p>This work evaluates the effectiveness of clustering algorithms for temporally segmenting social media timelines into distinct episodes of use. Using only post timestamps, MeanShift, K-Means, and DBSCAN clustering methods are compared against human annotations that leverage additional metadata such as post content, device type, and language. Performance is assessed through a multi-faceted evaluation including: (1) alignment with human-labeled segmentation points to measure accuracy; (2) runtime comparisons to assess algorithmic efficiency; and (3) analysis of intra- and inter-cluster token similarity to validate the semantic coherence and distinctiveness of the resulting segments. Results show that Mean-Shift clustering consistently produces segments that closely match human annotations, while maintaining computational efficiency and yielding high internal lexical consistency. These findings suggest that timestamp-based clustering provides a low-dimensional, reproducible method for detecting episodes of social media use. This segmentation supports downstream tasks such as author attribution and verification by providing a foundation for longitudinal analyses of online behavior and construction of sequential datasets within a single user account</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Authorship in Motion: Stylometric Drift Aware Authorship Attribution in Social Media</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-teal w3-round">In Progress</span></h6>
+          <p>Author attribution models achieve strong empirical performance in traditional text classification, yet they are largely brittle when applied to the dynamic, continuous stream of social media; existing systems treat account history as a single, static corpus, failing to capture normal stylistic drift or sudden shifts in account ownership. This limitation is particularly problematic in domains such as digital forensics and bot detection, where treating diverse digital identities as aggregate classes obscures crucial feature nuance and leaves platforms vulnerable to deceptive account manipulation. This dissertation investigates how intra-account stylochronometry can be modeled through temporal segmentation to detect potential changes in account operators—or regime changes—without sacrificing classification accuracy. The work progresses from temporal data preprocessing to comparative feature evaluation, and ultimately to a multi-model benchmark for binary anomaly detection. RQ1 investigates how temporal segmentation and behavioral clustering can be optimized to model an individual account's baseline stylistic drift while preserving critical feature nuance. RQ2 evaluates the extent to which specific lexical, syntactic, and structural stylometric features vary in stability when an account shifts from a human operator to an automated system or a different human entity. RQ3 examines how large language model (LLM) approaches compare to traditional machine learning classifiers in terms of accuracy and computational efficiency when performing a binary determination of an account regime change. The expected contributions to the fields of data science and computational linguistics are threefold: (1) a novel temporal framework for intra-account authorship analysis that captures natural stylistic drift over time; (2) an optimized feature selection and preprocessing methodology that establishes benchmarks for stylistic stability in short-form, high-velocity social media environments; and (3) an empirical evaluation of traditional and LLM-based architectures for detecting account transitions which may be due to account compromises, bot activations, and ownership transfers.</p>
+          <hr>
+        </div>
+      </div>
+
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Work Experience</h2>
         <div class="w3-container">
@@ -132,6 +149,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-search fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Projects / Research Questions</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Investigating Diversity in Synthetic Datasets Generated by LLMs</b></h5>
+          <p>Synthetic datasets are increasingly used to reduce the cost of human data collection and labeling, and to address gaps in dataset availability. While prior work has shown that models trained on synthetic data can underperform compared to those trained on human-generated data, the reasons for this gap are debated. Li et al. attribute the issue to the lack of nuanced, representative samples; other researchers point to a lack of diversity in synthetic data. This project focuses on empirically studying the <i>diversity hypothesis</i>.</p>          
+          <hr>
+        </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Episodes of Social Media Use and Evidence of Regime Changes</b></h5>
           <p>Utilizing a repository of 8+ year old Twitter accounts, this research includes developing a taxonomy for episodes of social media use, algorithmically segmenting timelines into episodes of use, evaluating the algorithmic segmentation. Finally features will be identified to train a model on predicting if the author of posts within an episode of social media use is the same author of a previous episode of use - this makes it a low context author attribution task.</p>
